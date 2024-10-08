@@ -3,12 +3,12 @@ from flask import Flask,render_template,request
 app = Flask(__name__)
 
 @app.route("/")
-def first():
-    return render_template("first.html")
+def welcome():
+    return render_template("welcome.html")
 
-@app.route("/home")
+@app.route("/login")
 def home():
-    return render_template("home.html")
+    return render_template("login.html")
 
 @app.route("/hello")
 def helloname():
@@ -28,6 +28,11 @@ def page2():
 @app.route("/page3")
 def page3():
     return render_template("page3.html")
+
+@app.route("/page4")
+def page4():
+    fname=request.args.get('fname')
+    return render_template("page4.html",data={"name":fname})
 
 if __name__ == "__main__":
     app.run(port=8000,debug=True)
