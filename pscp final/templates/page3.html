@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page3</title>
+    <title>home</title>
+    <link rel="stylesheet" href="page3.css">
 </head>
 <body>
-    <h1>page3</h1>
-    <p>แล้วมีเรื่องที่ไม่สบายใจไหม</p>
-    <p>พิมพ์บอกได้นะ</p>
-    <a href="/page4"><input type="submit" value="ต่อไป"></a>
-    <a href="/page2"><input type="submit" value="กลับ"></a>
+    <img class="i3"src="img/i3.png" width="1147" height="790" alt="">
+    <form action="{{url_for('helloname')}}" method="GET">
+        <div class="form-group">
+            <label for="">ชื่อ (name)</label>
+            <input type="text" name="fname" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">อายุ (age)</label>
+            <input type="text" name="fage" class="form-control">
+        </div>
+        <br>
+    </form>
+    
+    <a class="continue" href="page4.html">ต่อไป</a>
 </body>
 </html>
