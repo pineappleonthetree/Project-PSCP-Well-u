@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hello</title>
+    <title>WELL U</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='page4.css') }}">
 </head>
+
 <body>
-    <h1>การเดินทางอันแสนยาวนานตลอด {{data.age}} ปีของ {{data.name}}</h1>
-    <a href="page5.html"><input type="submit" value="ต่อไป"></a>
+    <img class="i5" src="{{ url_for('static', filename='img/i5.png') }}" width="1000" height="700" alt="">
+    <p>การเดินทางอันแสนยาวนานตลอด {{data.age}} ปีของ {{data.name}}</p>
+    <!-- <a class="continue" href="/page5"><input type="submit" value="ต่อไป"></a> -->
+    <a class="continue" href="/page5">ต่อไป</a>
 </body>
+
 </html>

@@ -1,0 +1,59 @@
+/* .i3 {
+    transform: translate(50vh, -50px);
+    position: absolute;
+
+} */
+
+.i3 {
+    position: absolute;
+    top: -200px;
+    right: 110px;
+    width: 85%;
+}
+
+.continue {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+}
+
+.continue {
+    background-color: #484848;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+}
+
+.continue:hover {
+    background-color: #8a8686;
+}
+
+.name {
+    font-family: Kanit;
+    font-size: 20px;
+    color: #585858;
+    margin: 10px 0 20px;
+    position: absolute;
+    top: 630px;
+    left: 115px;
+    width: 825px;
+    height: 266px;
+}
+
+.age {
+    font-family: Kanit;
+    font-size: 20px;
+    color: #585858;
+    margin: 10px 0 20px;
+    position: absolute;
+    top: 630px;
+    left: 400px;
+    width: 825px;
+    height: 266px;
+}
