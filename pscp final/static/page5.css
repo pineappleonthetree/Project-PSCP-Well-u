@@ -27,8 +27,14 @@ p {
     color: #585858;
     margin: 10px 0 20px;
     position: absolute;
-    top: 650px;
+    top: 0px;
     left: 500px;
     width: 825px;
     height: 266px;
+}
+
+.i6 {
+    position: absolute;
+    top: 0px;
+    right: 250px;
 }

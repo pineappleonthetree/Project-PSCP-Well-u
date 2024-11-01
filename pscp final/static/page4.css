@@ -1,7 +1,12 @@
+body{
+    overflow: hidden;
+}
 .i5 {
     position: absolute;
-    top: -100px;
-    right: 220px;
+    top: 200px;
+    right: 430px;
+    /* width: 964px; */
+    /* height: auto;  */
 }
 
 .continue {
@@ -33,7 +38,7 @@ p {
     color: #585858;
     margin: 10px 0 20px;
     position: absolute;
-    top: 650px;
+    top: 150px;
     left: 550px;
     width: 825px;
     height: 266px;
