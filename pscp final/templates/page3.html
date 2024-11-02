@@ -10,19 +10,20 @@
 
 <body>
     <img class="i3" src="{{ url_for('static', filename='img/i3.png') }}" width="1147" height="790" alt="">
-    <form action="{{url_for('page4')}}" method="GET">
+    <form action="{{ url_for('page4') }}" method="post">
         <div class="name">
             <label for="">ชื่อ (name)</label>
-            <input type="text" name="fname" class="form-control">
+            <input type="text" name="username" placeholder="Your Name" required>
         </div>
         <div class="age">
             <label for="">อายุ (age)</label>
-            <input type="text" name="fage" class="form-control">
+            <input type="text" name="age" placeholder="Your age" required>
         </div>
         <br>
+        <input class="continue" type="submit" value="ต่อไป">
+        <!-- <a><input type="submit" value="ต่อไป"></a> -->
+        <!-- <a class="continue" type="submit" href="/page4">ต่อไป</a> -->
     </form>
-    <!-- <a href="/page4"><input type="submit" value="ต่อไป"></a> -->
-    <a class="continue" href="/page4">ต่อไป</a>
 </body>
 
 </html>

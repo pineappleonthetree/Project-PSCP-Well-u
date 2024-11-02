@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request, redirect, url_for
 
 app = Flask(__name__)
 
@@ -14,16 +14,16 @@ def objective():
 def page3():
     return render_template("page3.html",)
 
-@app.route("/page4")
+@app.route("/page4", methods=['POST'])
 def page4():
-    fname=request.args.get('fname')
-    fage=request.args.get('fage')
-    return render_template("page4.html",data={"name":fname,"age":fage})
+    user_name = request.form['username']
+    user_age = request.form['age']
+    return render_template("page4.html",username=user_name,age=user_age)
 
-@app.route("/page5")
+@app.route("/page5", methods=['POST'])
 def page5():
-    fname=request.args.get('fname')
-    return render_template("page5.html",data={"name":fname})
+    user_name = request.form['username']
+    return render_template("page5.html",username=user_name)
 
 @app.route("/page6")
 def page6():

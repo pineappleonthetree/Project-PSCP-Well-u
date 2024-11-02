@@ -27,14 +27,23 @@ p {
     color: #585858;
     margin: 10px 0 20px;
     position: absolute;
-    top: 0px;
+    top: 200px;
     left: 500px;
     width: 825px;
     height: 266px;
 }
 
-.i6 {
+/* .i6 {
     position: absolute;
-    top: 0px;
-    right: 250px;
+    top: 200px;
+    right: 5px;
+    width: 100%;
+} */
+
+.i6 {
+    display: block;
+    margin-top: 13%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
