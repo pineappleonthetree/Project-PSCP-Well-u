@@ -14,28 +14,31 @@ def objective():
 def page3():
     return render_template("page3.html",)
 
-@app.route("/page4", methods=['POST'])
-def page4():
+@app.route('/submit', methods=['POST'])
+def submit():
     user_name = request.form['username']
     user_age = request.form['age']
-    return render_template("page4.html",username=user_name,age=user_age)
+    return redirect(url_for('page4', username=user_name,age=user_age))
 
-@app.route("/page5", methods=['POST'])
-def page5():
-    user_name = request.form['username']
-    return render_template("page5.html",username=user_name)
+@app.route("/page4/<username>/<age>")
+def page4(username,age):
+    return render_template("page4.html",username=username,age=age)
 
-@app.route("/page6")
-def page6():
-    return render_template("page6.html")
+@app.route("/page5/<username>")
+def page5(username):
+    return render_template("page5.html",username=username)
 
-@app.route("/page7")
-def page7():
-    return render_template("page7.html")
+@app.route("/page6/<username>")
+def page6(username):
+    return render_template("page6.html",username=username)
 
-@app.route("/page8")
-def page8():
-    return render_template("page8.html")
+@app.route("/page7/<username>")
+def page7(username):
+    return render_template("page7.html",username=username)
+
+@app.route("/page8/<username>")
+def page8(username):
+    return render_template("page8.html",username=username)
 
 @app.route("/page9")
 def page9():
