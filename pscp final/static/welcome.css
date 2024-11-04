@@ -12,11 +12,6 @@
     left: 100px;
 }
 
-/* .continue{
-    position: absolute;
-    bottom: 100px;
-    right: 100px;
-} */
 .continue {
     background-color: #484848;
     color: white;
@@ -50,10 +45,7 @@ h1 {
     position: absolute;
     top: 30px;
     left: 100px;
-
-
 }
-
 p {
     font-family: Kanit;
     font-size: 20px;
@@ -64,5 +56,4 @@ p {
     left: 120px;
     width: 405px;
     height: 129px;
-
 }

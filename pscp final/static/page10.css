@@ -5,19 +5,15 @@ h1 {
     font-weight: 900;
     font-size: 100px;
     color: #484848;
-
 }
-
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
+    
     top: 350px;
     position: relative;
-
 }
-
 .i2 {
     position: absolute;
     top: 0px;

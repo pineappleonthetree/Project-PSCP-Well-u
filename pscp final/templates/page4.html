@@ -7,13 +7,10 @@
     <title>WELL U</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='page4.css') }}">
 </head>
-
 <body>
-    <img class="i5" src="{{ url_for('static', filename='img/i5.svg') }}" width="764px" height="712px" alt="">
+    <img class="i10" src="{{ url_for('static', filename='img/i10.png') }}" width="764px" height="712px" alt="">
     <p>การเดินทางอันแสนยาวนานตลอด {{ age }} ปีของ {{ username }}</p>
-    <!-- <a class="continue" href="/page5"><input type="submit" value="ต่อไป"></a> -->
     <a class="continue" href="{{ url_for('page5', username=username,age=age) }}">ต่อไป</a>
-    <!-- <input class="continue" type="submit" value="ต่อไป"> -->
 </body>
 
 </html>

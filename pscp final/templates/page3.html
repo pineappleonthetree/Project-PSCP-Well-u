@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WELL U</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='page3.css') }}">
 </head>
-
 <body>
-    <img class="i3" src="{{ url_for('static', filename='img/i3.png') }}" width="1147" height="790" alt="">
+    <p>เริ่มต้นเรื่องราวของ</p>
+    <img class="i8" src="{{ url_for('static', filename='img/i8.png') }}" width="1440" height="1006" alt="">
+    <img class="i9" src="{{ url_for('static', filename='img/i9.png') }}" width="501" height="2" alt="">
     <form action="{{ url_for('submit') }}" method="post">
         <div class="name">
-            <label for="">ชื่อ (name)</label>
-            <input type="text" name="username" placeholder="Your Name" required>
+            <label for="username">ชื่อ (name)</label>
+        </div>
+        <div class="inputname">
+            <input type="text" id="username" name="username" placeholder="Your Name" required>
         </div>
         <div class="age">
-            <label for="">อายุ (age)</label>
-            <input type="text" name="age" placeholder="Your age" required>
+            <label for="age">อายุ (age)</label>
         </div>
-        <br>
-        <input class="continue" type="submit" value="ต่อไป">
-        <!-- <a><input type="submit" value="ต่อไป"></a> -->
-        <!-- <a class="continue" type="submit" href="/page4">ต่อไป</a> -->
+        <div class="inputage">
+            <input type="number" id="age" name="age" placeholder="Your Age" required>
+        </div>
+        <input  class="continue"  type="submit" value="ต่อไป">
     </form>
 </body>
-
 </html>
