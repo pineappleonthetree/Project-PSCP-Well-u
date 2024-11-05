@@ -13,6 +13,7 @@ body {
     
     top: 350px;
     position: relative;
+    background-color: rgb(245, 245, 245)
 }
 .i2 {
     position: absolute;
